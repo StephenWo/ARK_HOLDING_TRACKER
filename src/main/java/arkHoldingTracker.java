@@ -1,8 +1,12 @@
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 public class arkHoldingTracker {
 
-    public static void main(String[] args){
-
-        System.out.println("Hello World");
-
+    @SpringBootApplication
+    public static class Application {
+        public static void main(String[] args) {
+            SpringApplication.run(Application.class, args);
+        }
     }
 }
